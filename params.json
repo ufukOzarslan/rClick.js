@@ -1,0 +1,6 @@
+{
+  "name": "Rclick",
+  "tagline": "jQuery Right Click Plugin: This plugin enables you to use jQuery to attach events triggered by the right mouse button.",
+  "body": "### How to use ?\r\nThis plugin enables you to use jQuery to attach events triggered by the right mouse button. Three right-click events are supported: click, mouse-up, and mouse-down. There is also a built-in method to disable browser context menus.\r\n\r\n`\r\n$(window).rClick({\r\n    click: 'right',\r\n    element: $('#tooltip'),\r\n    delay : 100\r\n});\r\n`\r\n### Support or Contact\r\n\r\nsupport@hublabs.com.tr or [http://www.hublabs.com.tr](Hublabs Yazılım Ofisi)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
