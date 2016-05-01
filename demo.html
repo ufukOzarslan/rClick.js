@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Mouse Right Click</title>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+
+    <script type="text/javascript" src="rclick.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(window).rClick({
+                click: 'right',
+                element: $('#tooltip'),
+                delay : 100
+            });
+
+        })
+    </script>
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Tahoma';
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #tooltip {
+            border-left: 1px solid #d2cece;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #aba8a8;
+            border-right: 1px solid #d4d1d1;
+            border-radius: 5px;
+            background: #efefef;
+            -moz-box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        #tooltip ul {
+            padding: 0;
+        }
+
+        #tooltip ul li {
+            padding: 12px 30px 12px 20px;
+        }
+
+        #tooltip ul li a {
+            display: block;
+            text-decoration: none;
+            color: #444;
+            font-size: 14.5px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        #tooltip ul li:hover, #tooltip ul li.active {
+            background: #d8d8d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tooltip" class="hidden">
+        <ul>
+            <li><a href="#">Contact information</a></li>
+            <li><a href="#">Select message</a></li>
+            <li><a href="#">Quiet</a></li>
+            <li><a href="#">Clear message</a></li>
+            <li><a href="#">Delete chat</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
